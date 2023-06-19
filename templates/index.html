@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portpxel</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: linear-gradient(#1F227A, #1E1945);
+      height: 105vh;
+    }
+
+    .quadrado {
+      width: 300px;
+      height: 300px;
+      border: 3px solid #CC6CE6;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    div#q1 {
+      background-image: url('../static/img/MeGif.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .fala {
+      width: 750px;
+      height: 300px;
+      position: absolute;
+      top: 19%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+      background-image: url('../static/img/fala.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 15px;
+      color: #FFF;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .seta {
+      background-image: url('../static/img/seta.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 26%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .pasta1,
+    .pasta2,
+    .pasta3,
+    .pasta4,
+    .pasta5,
+    .pasta6,
+    .pasta7 {
+      width: 800px;
+      height: 800px;
+      position: absolute;
+      background-image: url('../static/img/pasta.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+
+    .pasta1 {
+      top: 50%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+    }
+
+    .pasta2 {
+      top: 35%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+    }
+
+    .pasta3 {
+      top: 65%;
+      left: 47%;
+      transform: translate(-50%, -50%);
+    }
+
+    .pasta4 {
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+    }
+
+    .pasta5 {
+      top: 35%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+    }
+
+    .pasta6 {
+      top: 65%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+    }
+
+    .pasta7 {
+      top: 24.1%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Media queries */
+    @media (max-width: 768px) {
+      .quadrado {
+        width: 200px;
+        height: 200px;
+      }
+
+      .fala {
+        width: 500px;
+        height: 200px;
+        font-size: 16px;
+      }
+
+      .pasta1,
+      .pasta2,
+      .pasta3,
+      .pasta4,
+      .pasta5,
+      .pasta6,
+      .pasta7 {
+        width: 600px;
+        height: 600px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .quadrado {
+        width: 150px;
+        height: 150px;
+      }
+
+      .fala {
+        width: 300px;
+        height: 150px;
+        font-size: 14px;
+      }
+
+      .pasta1,
+      .pasta2,
+      .pasta3,
+      .pasta4,
+      .pasta5,
+      .pasta6,
+      .pasta7 {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .texto-pasta1 {
+      position: absolute;
+      top: 38.9%;
+      left: 64%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+
+    .texto-pasta2 {
+      position: absolute;
+      top: 54%;
+      left: 64%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+
+    .texto-pasta3 {
+      position: absolute;
+      top: 68.9%;
+      left: 64%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+
+    .texto-pasta4 {
+      position: absolute;
+      top: 38.9%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+
+    .texto-pasta5 {
+      position: absolute;
+      top: 54%;
+      left: 37%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+
+    .texto-pasta6 {
+      position: absolute;
+      top: 68.9%;
+      left: 37.4%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="quadrado"></div>
+  <div class="quadrado" id="q1"></div>
+  <div class="fala">
+    <span style="position: absolute; top: 45%; left: 46.5%; transform: translate(-50%, -50%);">
+      Olá, eu sou o Adriano, <br> para me conhecer melhor <br> clique nas pastas :)
+    </span>
+  </div>
+  <div class="seta"></div>
+  <div class="pasta1"></div>
+  <div class="texto-pasta1">Soft skills</div>
+  <div class="pasta2"></div>
+  <div class="texto-pasta2">Hard skills</div>
+  <div class="pasta3"></div>
+  <div class="texto-pasta3">Projetos</div>
+  <div class="pasta4"></div>
+  <div class="texto-pasta4">Games</div>
+  <div class="pasta5"></div>
+  <div class="texto-pasta5">Músicas</div>
+  <div class="pasta6"></div>
+  <div class="texto-pasta6">Outros :)</div>
+  <div class="pasta7"></div>
+
+  <script>
+    const pastas = document.querySelectorAll('.pasta1, .pasta2, .pasta3, .pasta4, .pasta5, .pasta6, .pasta7');
+    pastas.forEach(pasta => {
+      pasta.addEventListener('click', () => {
+        alert("Essa pasta ainda está vazia, mas em breve você poderá ver mais informações. Fique ligado! 😉");
+      });
+    });
+  </script>
+</body>
+<footer>
+  <p>Desenvolvido por Adriano Wronski ©</p>
+</footer>
+<style>
+  footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+
+</html>
