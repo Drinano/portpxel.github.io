@@ -20,17 +20,6 @@ div#q1 {
   background-size: cover;
 }
 
-#imagem-info {
-  background-image: url('static/img/paginainfo.png');
-  top: 29%;
-  left: 19%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 220px;
-  position: sticky;
-  background-size: cover;
-}
-
 .fala {
   width: 750px;
   height: 300px;
@@ -213,7 +202,6 @@ div#q1 {
   background-image: url('static/img/pasta.png');
   background-repeat: no-repeat;
   background-size: auto;
-  cursor: pointer;
 }
 
 footer {
