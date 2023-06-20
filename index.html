@@ -2,77 +2,232 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portpxel</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portpxel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="quadrado"></div>
-  <div class="quadrado" id="q1"></div>
-  <div class="fala">
-    <span style="position: absolute; top: 49%; left: 46.3%; transform: translate(-50%, -50%);">
-      Olá, eu sou o Adriano, <br> para me conhecer melhor <br> clique nas pastas :)
-    </span>
-  </div>
-  <div class="seta"></div>
-  <div class="pasta1" id="pasta1"></div>
-  <div class="texto-pasta1">Soft skills</div>
-  <div class="pasta2" id="pasta2"></div>
-  <div class="texto-pasta2">Hard skills</div>
-  <div class="pasta3" id="pasta3"></div>
-  <div class="texto-pasta3">Projetos</div>
-  <div class="pasta4" id="pasta4"></div>
-  <div class="texto-pasta4">Games</div>
-  <div class="pasta5" id="pasta5"></div>
-  <div class="texto-pasta5">Músicas</div>
-  <div class="pasta6" id="pasta6"></div>
-  <div class="texto-pasta6">Outros :)</div>
-  <div class="pasta7" id="pasta7"></div>
-  <script>
-    const pasta1 = document.querySelector('.pasta1');
-    const pasta2 = document.querySelector('.pasta2');
-    const pasta3 = document.querySelector('.pasta3');
-    const pasta4 = document.querySelector('.pasta4');
-    const pasta5 = document.querySelector('.pasta5');
-    const pasta6 = document.querySelector('.pasta6');
-    const pasta7 = document.querySelector('.pasta7');
+    <div class="quadrado"></div>
+    <div class="quadrado" id="q1"></div>
+    <div class="fala">
+        <span style="position: absolute; top: 49%; left: 46.3%; transform: translate(-50%, -50%);">
+            Olá, eu sou o Adriano, <br> para me conhecer melhor <br> clique nas pastas :)
+        </span>
+    </div>
+    <div class="pasta7" id="pasta7"></div>
+    <div class="seta"></div>
+    <div class="pasta1" id="pasta1"></div>
+    <div class="texto-pasta1">Soft skills</div>
 
-    pasta1.addEventListener('click', function() {
-      alert("Essa pasta ainda está vazia, mas em breve você poderá ver mais informações. Fique ligado! 😉");
-    });
+    <!-- Pasta 1 - Popup -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <!-- Conteúdo do popup -->
+            <h2>Minhas Soft Skills:</h2>
+            <p>Comunicação eficaz;</p>
+            <p>Trabalho em equipe;</p>
+            <p>Pensamento crítico;</p>
+            <p>Inteligência emocional;</p>
+            <p>Orientação para detalhes;</p>
+            <p>Pensamento criativo;</p>
+            <p>Adaptabilidade;</p>
+            <p>Proatividade;</p>
+            <p>Liderança.</p>
+               <span style="font-style: italic; font-size: smaller;">Ao longo da minha carreira em TI, tive a oportunidade de cultivar e aprimorar esta série de soft skills valiosas.</span></p>
+            <button class="fechar-popup" data-popup="popup1">Fechar</button>
+        </div>
+    </div>
 
-    pasta2.addEventListener('click', function() {
-      alert("Essa pasta ainda está vazia, mas em breve você poderá ver mais informações. Fique ligado! 😉");
-    });
+    <div class="pasta2" id="pasta2"></div>
+    <div class="texto-pasta2">Hard skills</div>
 
-    pasta3.addEventListener('click', function() {
-      alert("Essa pasta ainda está vazia, mas em breve você poderá ver mais informações. Fique ligado! 😉");
-    });
+    <!-- Pasta 2 - Popup -->
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <!-- Conteúdo do popup -->
+            <h2>Algumas Hard Skills:</h2>
+            <p>SQL;</p>
+            <p>HTML, CSS, JS;</p>
+            <p>Python, Django Framework;</p>
+            <p>Windows, Linux;</p>
+            <p>Redes, Firewalls;</p>
+            <p>Hardware Avançado;</p>
+            <p>Modelagem 3D Blender;</p>
+            <p>Gestão de projetos;</p>
+            <p>Manutenção de computadores;</p>
+            <p>Suporte técnico.</p>
+            <span style="font-style: italic; font-size: smaller;">Essas hard skills foram adquiridas ao longo da minha trajetória profissional, através de projetos desafiadores. Elas me capacitam a enfrentar e resolver complexos problemas relacionados à minha área de atuação em TI.</span></p>
+            <button class="fechar-popup" data-popup="popup2">Fechar</button>
+        </div>
+    </div>
 
-    pasta4.addEventListener('click', function() {
-      alert("Essa pasta ainda está vazia, mas em breve você poderá ver mais informações. Fique ligado! 😉");
-    });
+    <div class="pasta3" id="pasta3"></div>
+    <div class="texto-pasta3">Cursos e Formações</div>
 
-    pasta5.addEventListener('click', function() {
-      alert("Essa pasta ainda está vazia, mas em breve você poderá ver mais informações. Fique ligado! 😉");
-    });
+    <!-- Pasta 3 - Popup -->
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <!-- Conteúdo do popup -->
+            <h2>Informações sobre meus conhecimentos:</h2>
+            <p>Ensino superior completo em Análise e Desenvolvimento de Sistemas <a href="https://drive.google.com/file/d/1RU2PIhTWc5-3TSeHhIy3PXB1vT9s_qWm/view?usp=sharing">Certificado</a> </p>
+            <p>Quality Assurance: Plano de testes e gestão de bugs <a href="https://cursos.alura.com.br/certificate/b860fd92-764e-4912-bb5b-41b2bae0215e">Certificado</a> </p>
+            <p>Gestão e Infraestrutura de TI <a href="https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/33467/7f63d914bda15cc95474dafea8576983/certificado.png">Certificado</a> </p>
+            <p>Cypress: automação de testes E2E <a href="https://cursos.alura.com.br/certificate/b96dd921-8225-4270-ac17-2492bfb9f447">Certificado</a></p>
+            <button class="fechar-popup" data-popup="popup3">Fechar</button>
+        </div>
+    </div>
 
-    pasta6.addEventListener('click', function() {
-      alert("Essa pasta ainda está vazia, mas em breve você poderá ver mais informações. Fique ligado! 😉");
-    });
+    <div class="pasta4" id="pasta4"></div>
+    <div class="texto-pasta4">Games</div>
 
-    pasta7.addEventListener('click', function() {
-      alert("Clique nas pastas abaixo 😁");
-    });
-  </script>
+    <!-- Pasta 4 - Popup -->
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <!-- Conteúdo do popup -->
+            <h2>Alguns Games que eu gosto:</h2>
+            <p>Diablo IV - Relação de amor e ódio. Essa é minha <a href="https://drive.google.com/file/d/1Y8_8HcGfFMTNPd_1-vTZDOAL0u2LeusX/view?usp=sharing">Necromante</a>. Minha primeira personagem.</p>
+            <p>Assassin's Creed<span style="font-style: italic; font-size: smaller;">(A franquia é muito boa mas o Valhalla é demais!)</span></p>
+            <p>It Takes Two<span style="font-style: italic; font-size: smaller;">(Antes de jogar com sua esposa faça um seguro de vida.)</span></p>
+            <p>Perfect World<span style="font-style: italic; font-size: smaller;">(Todo mundo tem um vício ruim não é mesmo?! hehehe)</span></p>
+            <p>Tribes of Midgard<span style="font-style: italic; font-size: smaller;">(Sobrevivência cooperativo nórdico, indicado pelo amigo Alex.)</span></p>
+            <p>New World<span style="font-style: italic; font-size: smaller;">(Apesar dos bugs, é um game legal. A experiência é afetada pelas decisões dos jogadores o que torna bem competitivo e incentiva a busca por estratégias eficazes.)</span></p>
+            <button class="fechar-popup" data-popup="popup4">Fechar</button>
+        </div>
+    </div>
+
+    <div class="pasta5" id="pasta5"></div>
+    <div class="texto-pasta5">Músicas</div>
+
+    <!-- Pasta 5 - Popup -->
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <!-- Conteúdo do popup -->
+            <h2>Algumas músicas e bandas que eu gosto:</h2>
+            <p><a href="https://open.spotify.com/intl-pt/artist/4DWX7u8BV0vZIQSpJQQDWU?si=rGZ6CYwwTYSszZiaj6Bglg">Alter Bridge</a> </p>
+            <p><a href="https://open.spotify.com/intl-pt/track/62YIf2N5dpoXGcm4oYwtaM?si=6d707a7745ec493d">Fairy Tale - Shaman</a> </p>
+            <button class="fechar-popup" data-popup="popup5">Fechar</button>
+        </div>
+    </div>
+
+    <div class="pasta6" id="pasta6"></div>
+    <div class="texto-pasta6">Outros</div>
+
+    <!-- Pasta 6 - Popup -->
+    <div id="popup6" class="popup">
+        <div class="popup-content">
+            <!-- Conteúdo do popup -->
+            <h2>Algumas outras informações</h2>
+            <p>Ops, ainda não há nada por aqui...</p>
+            <button class="fechar-popup" data-popup="popup6">Fechar</button>
+        </div>
+    </div>
+
+    <!-- ... Repita o padrão para as demais pastas e popups ... -->
+
+    <script>
+        const pasta1 = document.querySelector('.pasta1');
+        const pasta2 = document.querySelector('.pasta2');
+        const pasta3 = document.querySelector('.pasta3');
+        const pasta4 = document.querySelector('.pasta4');
+        const pasta5 = document.querySelector('.pasta5');
+        const pasta6 = document.querySelector('.pasta6');
+
+        // Popup 1
+        const popup1 = document.getElementById('popup1');
+        const fecharPopup1 = popup1.querySelector('.fechar-popup');
+
+        pasta1.addEventListener('click', function () {
+            // Exibe o popup 1
+            popup1.style.display = 'block';
+        });
+
+        fecharPopup1.addEventListener('click', function () {
+            // Oculta o popup 1 ao clicar no botão "Fechar"
+            popup1.style.display = 'none';
+        });
+
+        // Popup 2
+        const popup2 = document.getElementById('popup2');
+        const fecharPopup2 = popup2.querySelector('.fechar-popup');
+
+        pasta2.addEventListener('click', function () {
+            // Exibe o popup 2
+            popup2.style.display = 'block';
+        });
+
+        fecharPopup2.addEventListener('click', function () {
+            // Oculta o popup 2 ao clicar no botão "Fechar"
+            popup2.style.display = 'none';
+        });
+
+        // Popup 3
+        const popup3 = document.getElementById('popup3');
+        const fecharPopup3 = popup3.querySelector('.fechar-popup');
+
+        pasta3.addEventListener('click', function () {
+            // Exibe o popup 2
+            popup3.style.display = 'block';
+        });
+
+        fecharPopup3.addEventListener('click', function () {
+            // Oculta o popup 2 ao clicar no botão "Fechar"
+            popup3.style.display = 'none';
+        });
+
+        // Popup 4
+        const popup4 = document.getElementById('popup4');
+        const fecharPopup4 = popup4.querySelector('.fechar-popup');
+
+        pasta4.addEventListener('click', function () {
+            // Exibe o popup 2
+            popup4.style.display = 'block';
+        });
+
+        fecharPopup4.addEventListener('click', function () {
+            // Oculta o popup 2 ao clicar no botão "Fechar"
+            popup4.style.display = 'none';
+        });
+
+        // Popup 5
+        const popup5 = document.getElementById('popup5');
+        const fecharPopup5 = popup5.querySelector('.fechar-popup');
+
+        pasta5.addEventListener('click', function () {
+            // Exibe o popup 2
+            popup5.style.display = 'block';
+        });
+
+        fecharPopup5.addEventListener('click', function () {
+            // Oculta o popup 2 ao clicar no botão "Fechar"
+            popup5.style.display = 'none';
+        });
+
+        // Popup 2
+        const popup6 = document.getElementById('popup6');
+        const fecharPopup6 = popup6.querySelector('.fechar-popup');
+
+        pasta6.addEventListener('click', function () {
+            // Exibe o popup 2
+            popup6.style.display = 'block';
+        });
+
+        fecharPopup6.addEventListener('click', function () {
+            // Oculta o popup 2 ao clicar no botão "Fechar"
+            popup6.style.display = 'none';
+        });
+
+    // ... Repita a lógica para as demais pastas e popups ...
+
+    </script>
+
 </body>
 
 <footer>
-  <p>Desenvolvido por Adriano Wronski ©</p>
+    <p>Desenvolvido por Adriano Wronski ©</p>
 </footer>
 
 </html>

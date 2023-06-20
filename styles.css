@@ -51,7 +51,7 @@ div#q1 {
   top: 26%;
   left: 49%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 1;
 }
 
 .pasta1 {
@@ -215,4 +215,52 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.popup {
+  image-rendering: pixelated;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none; /* Oculta o popup por padrão */
+}
+
+.popup-content {
+  margin-bottom: 20px;
+}
+
+.popup h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.popup p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.popup button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  position: sticky;
+
+}
+
+.popup button:hover {
+  background-color: #333;
 }
