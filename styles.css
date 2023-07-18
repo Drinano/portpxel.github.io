@@ -1,225 +1,217 @@
 body {
-  background-image: linear-gradient(#1F227A, #1E1945);
-  height: 105vh;
+  background: linear-gradient(#1f227a, #1e1945);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100%;
 }
 
 .quadrado {
-  width: 300px;
-  height: 300px;
-  border: 3px solid #CC6CE6;
-  border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-div#q1 {
-  background-image: url('static/img/MeGif.gif');
-  background-repeat: no-repeat;
+  width: 30vmin; /* Tamanho relativo ao viewport width */
+  height: 30vmin; /* Tamanho relativo ao viewport width */
+  background-image: url("static/img/MeGif.gif");
   background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid #cc6ce6;
+  border-radius: 12px;
+  position: fixed;
+  display: flex;
 }
 
 .fala {
-  width: 750px;
-  height: 300px;
-  position: absolute;
-  top: 19%;
-  left: 51.4%;
-  transform: translate(-50%, -50%);
-  background-image: url('static/img/fala.png');
-  background-repeat: no-repeat;
+  width: 78vmin; /* Tamanho relativo ao viewport width */
+  height: 43vmin; /* Tamanho relativo ao viewport width */
+  background-image: url("static/img/fala.png");
+  transform: translate(3%, -53%);
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+}
+
+.escrita {
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 15px;
-  color: #FFF;
-  padding: 20px;
-  line-height: 1.5;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.3vh;
+  color: #fff;
+  line-height: 1.4;
+  position: relative;
+  top: 37.5%;
+  left: 46.3%;
+  transform: translate(-50%, -50%);
+  padding: 0.2vw;
+  position: fixed;
+  display: flex;
 }
 
 .seta {
-  background-image: url('static/img/seta.gif');
+  background-image: url("static/img/seta.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 26%;
-  left: 49%;
+  width: 5vmin; /* Tamanho relativo ao viewport width */
+  height: 4vmin; /* Tamanho relativo ao viewport width */
+  position: fixed;
+  display: flex;
+  top: 54%;
+  left: 46%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
 
-.pasta1 {
-  top: 35%;
-  left: 64%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 70px;
-  position: absolute;
-  background-image: url('static/img/pasta.png');
+.pasta7 {
+  top: 46%;
+  left: 38%;
+  width: 7.2vmin;
+  height: 5.6vmin;
+  position: fixed;
+  background-image: url("static/img/pasta.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+}
+
+.pasta1 {
+  top: 67%;
+  left: 73%;
+  width: 7.5vmin;
+  height: 6vmin;
+  position: fixed;
+  background-image: url("static/img/pasta.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
 }
 
 .texto-pasta1 {
-  position: absolute;
-  top: 38.9%;
-  left: 64%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 82%;
+  left: 69%;
   color: white;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 10px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2vh;
 }
 
 .pasta2 {
-  top: 50%;
-  left: 64%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 70px;
-  position: absolute;
-  background-image: url('static/img/pasta.png');
+  top: 95%;
+  left: 73%;
+  width: 7.5vmin;
+  height: 6vmin;
+  position: fixed;
+  background-image: url("static/img/pasta.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   cursor: pointer;
 }
 
 .texto-pasta2 {
-  position: absolute;
-  top: 54%;
-  left: 64%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 111%;
+  left: 69%;
   color: white;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 10px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2vh;
 }
 
 .pasta3 {
-  top: 64.9%;
-  left: 64%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 70px;
-  position: absolute;
-  background-image: url('static/img/pasta.png');
+  top: 125%;
+  left: 73%;
+  width: 7.5vmin;
+  height: 6vmin;
+  position: fixed;
+  background-image: url("static/img/pasta.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   cursor: pointer;
 }
 
 .texto-pasta3 {
-  position: absolute;
-  top: 68.9%;
-  left: 64%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 141%;
+  left: 65%;
   color: white;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 10px;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.2vh;
 }
 
 .pasta4 {
-  top: 35%;
-  left: 36.9%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 70px;
-  position: absolute;
-  background-image: url('static/img/pasta.png');
+  top: 66%;
+  left: 12%;
+  width: 7.5vmin;
+  height: 6vmin;
+  position: fixed;
+  background-image: url("static/img/pasta.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   cursor: pointer;
 }
 
 .texto-pasta4 {
   position: absolute;
-  top: 38.9%;
-  left: 37%;
+  top: 83%;
+  left: 17%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 10px;
 }
 
 .pasta5 {
-  top: 50%;
-  left: 36.8%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 70px;
-  position: absolute;
-  background-image: url('static/img/pasta.png');
+  top: 95%;
+  left: 12%;
+  width: 7.5vmin;
+  height: 6vmin;
+  position: fixed;
+  background-image: url("static/img/pasta.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   cursor: pointer;
 }
 
 .texto-pasta5 {
   position: absolute;
-  top: 54%;
-  left: 37%;
+  top: 112%;
+  left: 18%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 10px;
 }
 
 .pasta6 {
-  top: 65%;
-  left: 36.8%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 70px;
-  position: absolute;
-  background-image: url('static/img/pasta.png');
+  top: 126%;
+  left: 12%;
+  width: 7.5vmin;
+  height: 6vmin;
+  position: fixed;
+  background-image: url("static/img/pasta.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   cursor: pointer;
 }
 
 .texto-pasta6 {
   position: absolute;
-  top: 68.9%;
-  left: 37.4%;
+  top: 143.2%;
+  left: 18%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 10px;
-}
-
-.pasta7 {
-  top: 25.5%;
-  left: 47%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 70px;
-  position: absolute;
-  background-image: url('static/img/pasta.png');
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 10px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 .popup {
   image-rendering: pixelated;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 10px;
   position: fixed;
   top: 50%;
@@ -258,9 +250,18 @@ footer {
   border-radius: 14px;
   cursor: pointer;
   position: sticky;
-
 }
 
-.popup button:hover {
-  background-color: #333;
+footer {
+  background-color: black;
+  color: white;
+  padding: 1vh;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1vh;
+  position: fixed;
+  transform: translate(-34%, 1030%);
+  left: 0%;
+  bottom: 0%;
+  width: 300%;
 }
